@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body class="bd">
+  <form action="index.html" method="post">
+    <div class="container">
+      <p class="form-title">Registration</p>
+      <table align="center" cellpadding="10">
+        <tr>
+          <td align="left"><label for="name">Full Name</label></td>
+          <td><input type="text" id="name" name="name" placeholder="Enter your name" required /></td>
+          <td align="left"><label for="uname">Username</label></td>
+          <td><input type="text" id="uname" name="uname" placeholder="Enter your username" required /></td>
+        </tr>
+        <tr>
+          <td align="left"><label for="email">Email</label></td>
+          <td><input type="email" id="email" name="email" placeholder="Enter your email" required /></td>
+          <td align="left"><label for="phone">Phone Number</label></td>
+          <td><input type="tel" id="phone" name="phone" placeholder="Enter your number" required /></td>
+        </tr>
+        <tr>
+          <td align="left"><label for="password">Password</label></td>
+          <td><input type="password" id="password" name="password" placeholder="Enter your password" required /></td>
+          <td align="left"><label for="cpassword">Confirm Password</label></td>
+          <td><input type="password" id="cpassword" name="cpassword" placeholder="Confirm your password" required /></td>
+        </tr>
+        <tr>
+          <td align="left" style="vertical-align: middle;"><label>Gender</label></td>
+          <td colspan="3" style="vertical-align: middle;">
+            <label class="gender-label">
+              <input type="radio" id="male" name="gender" value="male" /> Male
+            </label>
+            <label class="gender-label">
+              <input type="radio" id="female" name="gender" value="female" /> Female
+            </label>
+            <label class="gender-label">
+              <input type="radio" id="other" name="gender" value="other" /> Other
+            </label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" align="left">
+            <input type="button" id="cancel" name="cancel" value="Cancel" />
+            <input type="submit" id="submit" name="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</body>
+</html>
+
+
